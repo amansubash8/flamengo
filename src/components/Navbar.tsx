@@ -10,7 +10,11 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-bold text-restaurant-purple">Sakura</span>
+            <img 
+              src="/lovable-uploads/219dbe79-cb67-4a89-9b99-fb9f79cb9652.png" 
+              alt="Flamengo" 
+              className="h-8"
+            />
           </div>
           
           {/* Desktop menu */}
