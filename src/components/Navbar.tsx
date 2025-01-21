@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +11,20 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <img 
-              src="/lovable-uploads/219dbe79-cb67-4a89-9b99-fb9f79cb9652.png" 
-              alt="Flamengo" 
-              className="h-8"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/219dbe79-cb67-4a89-9b99-fb9f79cb9652.png" 
+                alt="Flamengo" 
+                className="h-8"
+              />
+            </Link>
           </div>
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#menu" className="text-gray-600 hover:text-restaurant-purple transition-colors">
+            <Link to="/menu" className="text-gray-600 hover:text-restaurant-purple transition-colors">
               Menu
-            </a>
+            </Link>
             <a href="#about" className="text-gray-600 hover:text-restaurant-purple transition-colors">
               About
             </a>
@@ -46,15 +49,17 @@ export const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
-            <a
-              href="#menu"
+            <Link
+              to="/menu"
               className="block px-3 py-2 text-gray-600 hover:text-restaurant-purple"
+              onClick={() => setIsOpen(false)}
             >
               Menu
-            </a>
+            </Link>
             <a
               href="#about"
               className="block px-3 py-2 text-gray-600 hover:text-restaurant-purple"
+              onClick={() => setIsOpen(false)}
             >
               About
             </a>
