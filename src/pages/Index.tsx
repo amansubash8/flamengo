@@ -64,10 +64,9 @@ const Index = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Available in</h3>
             <ul className="space-y-2 text-gray-600">
-              <li>New York</li>
-              <li>Los Angeles</li>
-              <li>Chicago</li>
-              <li>San Francisco</li>
+              <li>Trivandrum</li>
+              <li>Thrissur</li>
+              <li>Kozhikode</li>
             </ul>
           </div>
 
