@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/Navbar";
+import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 const Index = () => {
   return (
@@ -35,6 +36,61 @@ const Index = () => {
           </p>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="bg-white py-16 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo Section */}
+          <div className="flex flex-col items-center md:items-start">
+            <img 
+              src="/lovable-uploads/219dbe79-cb67-4a89-9b99-fb9f79cb9652.png" 
+              alt="Restaurant Logo" 
+              className="h-8 mb-4"
+            />
+            <p className="text-gray-500 text-sm">© 2024 All rights reserved</p>
+          </div>
+
+          {/* Contact Us */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Contact Us</h3>
+            <ul className="space-y-2 text-gray-600">
+              <li>Help & Support</li>
+              <li>Partner with us</li>
+              <li>Ride with us</li>
+            </ul>
+          </div>
+
+          {/* Available in */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Available in</h3>
+            <ul className="space-y-2 text-gray-600">
+              <li>New York</li>
+              <li>Los Angeles</li>
+              <li>Chicago</li>
+              <li>San Francisco</li>
+            </ul>
+          </div>
+
+          {/* Social Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Social Links</h3>
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-600 hover:text-restaurant-purple transition-colors">
+                <Facebook size={24} />
+              </a>
+              <a href="#" className="text-gray-600 hover:text-restaurant-purple transition-colors">
+                <Instagram size={24} />
+              </a>
+              <a href="#" className="text-gray-600 hover:text-restaurant-purple transition-colors">
+                <Twitter size={24} />
+              </a>
+              <a href="#" className="text-gray-600 hover:text-restaurant-purple transition-colors">
+                <Linkedin size={24} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
